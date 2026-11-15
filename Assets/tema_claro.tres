@@ -1,0 +1,104 @@
+[gd_resource type="Theme" format=3 uid="uid://bclakhkch6rrj"]
+
+[ext_resource type="Texture2D" uid="uid://c8i6wafo1ftx4" path="res://Assets/Icons/square-rounded-check.svg" id="1_1iyua"]
+[ext_resource type="Texture2D" uid="uid://b6miovd1xrj14" path="res://Assets/Icons/square-check.svg" id="1_63vp3"]
+[ext_resource type="Texture2D" uid="uid://b1d2o6gf6mbwt" path="res://Assets/Icons/square-rounded.svg" id="2_wwup5"]
+[ext_resource type="Texture2D" uid="uid://8rspu5ceci0r" path="res://Assets/Icons/square.svg" id="4_0c683"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lk20f"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(0.88235295, 0.8862745, 0.9254902, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w6jdk"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0p6i"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(0.7058824, 0.7137255, 0.8039216, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1iyua"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(0.14393428, 0.14859968, 0.18525699, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8a6yw"]
+bg_color = Color(0.6666667, 0.6627451, 0.9882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wwup5"]
+bg_color = Color(0.6666667, 0.6627451, 0.9882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_63vp3"]
+bg_color = Color(0.6666667, 0.6627451, 0.9882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0c683"]
+bg_color = Color(0.6666667, 0.6627451, 0.9882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g72k7"]
+bg_color = Color(0.6666667, 0.6627451, 0.9882353, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1c3c8"]
+content_margin_left = 16.0
+content_margin_top = 4.0
+content_margin_right = 16.0
+content_margin_bottom = 4.0
+bg_color = Color(0.8455, 0.8492083, 0.89, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[resource]
+default_font_size = 38
+Button/colors/font_color = Color(0.05490196, 0.015686275, 0.19607843, 1)
+Button/colors/font_disabled_color = Color(0.05490196, 0.015686275, 0.19607843, 1)
+Button/colors/font_hover_color = Color(0.05490196, 0.015686275, 0.19607843, 1)
+Button/colors/font_pressed_color = Color(0.05490196, 0.015686275, 0.19607843, 1)
+Button/styles/disabled = SubResource("StyleBoxFlat_lk20f")
+Button/styles/hover = SubResource("StyleBoxFlat_w6jdk")
+Button/styles/normal = SubResource("StyleBoxFlat_e0p6i")
+Button/styles/pressed = SubResource("StyleBoxFlat_1iyua")
+CheckBox/colors/font_color = Color(0.08235294, 0.09019608, 0.21960784, 1)
+CheckBox/colors/font_hover_color = Color(1, 1, 1, 1)
+CheckBox/colors/font_pressed_color = Color(0.08235294, 0.09019608, 0.21960784, 1)
+CheckBox/constants/h_separation = 20
+CheckBox/icons/checked = ExtResource("1_63vp3")
+CheckBox/icons/radio_checked = ExtResource("1_1iyua")
+CheckBox/icons/radio_unchecked = ExtResource("2_wwup5")
+CheckBox/icons/unchecked = ExtResource("4_0c683")
+CheckBox/styles/focus = SubResource("StyleBoxFlat_8a6yw")
+CheckBox/styles/hover = SubResource("StyleBoxFlat_wwup5")
+CheckBox/styles/hover_pressed = SubResource("StyleBoxFlat_63vp3")
+CheckBox/styles/normal = SubResource("StyleBoxFlat_0c683")
+CheckBox/styles/pressed = SubResource("StyleBoxFlat_g72k7")
+Label/colors/font_color = Color(0.054908283, 0.01696452, 0.19542435, 1)
+Label/font_sizes/font_size = 43
+OptionButton/styles/hover = null
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_1c3c8")

@@ -1,0 +1,448 @@
+[gd_scene format=3 uid="uid://b6i2mm0lkhm7r"]
+
+[ext_resource type="Theme" uid="uid://bclakhkch6rrj" path="res://Assets/tema_claro.tres" id="1_rc104"]
+[ext_resource type="ButtonGroup" uid="uid://6fny1avo6prd" path="res://Cartas/button_group_filtro_busqueda.tres" id="2_55plg"]
+[ext_resource type="Script" uid="uid://bj45dct7icmpy" path="res://Cartas/compendio_visual.gd" id="2_wncp3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rc104"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6666667, 0.6627451, 0.9882353, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iim41"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(0.92703205, 0.9294651, 0.9539024, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lsvr"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(0.9254902, 0.92941177, 0.9529412, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c4noq"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(0.9254902, 0.92941177, 0.9529412, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xct4h"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(0.9254902, 0.92941177, 0.9529412, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_55plg"]
+bg_color = Color(0.08235294, 0.09019608, 0.21960784, 1)
+border_color = Color(0.03116982, 1.255611e-05, 0.16741848, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wncp3"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[node name="CompendioVisual" type="Control" unique_id=254956061]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 576.0
+offset_top = 324.0
+offset_right = -576.0
+offset_bottom = -324.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_rc104")
+script = ExtResource("2_wncp3")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1880622614]
+custom_maximum_size = Vector2(1152, -1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.5
+offset_right = 3.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VSplitContainer" type="VBoxContainer" parent="PanelContainer" unique_id=2059092289]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VSplitContainer" unique_id=1624061442]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Compendio"
+
+[node name="PanelFiltros" type="PanelContainer" parent="PanelContainer/VSplitContainer" unique_id=1538925264]
+custom_maximum_size = Vector2(1128, -1)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_rc104")
+
+[node name="FiltrosDisplay" type="HBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros" unique_id=1150902601]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="ColorRect4" type="ColorRect" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay" unique_id=1609051490]
+custom_minimum_size = Vector2(3, 0)
+custom_maximum_size = Vector2(3, -1)
+layout_mode = 2
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="Filtros" type="VBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay" unique_id=253197655]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros" unique_id=1174616428]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Filtros"
+
+[node name="Espaciador2" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros" unique_id=1975589118]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros" unique_id=2119242049]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="FiltrosIzquierda" type="VBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer" unique_id=1584077978]
+custom_maximum_size = Vector2(216, -1)
+layout_mode = 2
+
+[node name="TipoBox" type="HBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda" unique_id=1436215656]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda/TipoBox" unique_id=1867182300]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Tipo: "
+
+[node name="TipoSelector" type="OptionButton" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda/TipoBox" unique_id=1386450087]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_iim41")
+theme_override_constants/arrow_margin = 4
+item_count = 5
+popup/item_0/text = "cualquiera"
+popup/item_0/id = 4
+popup/item_1/text = "Habilidad"
+popup/item_1/id = 1
+popup/item_2/text = "Hechizo"
+popup/item_2/id = 2
+popup/item_3/text = "Equipamiento"
+popup/item_3/id = 2
+popup/item_4/text = "Consumible"
+popup/item_4/id = 3
+
+[node name="Espaciador3" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda" unique_id=589359166]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SubtipoBox" type="HBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda" unique_id=1461708051]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda/SubtipoBox" unique_id=1920205783]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Subipo: "
+
+[node name="SubtipoSelector" type="OptionButton" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda/SubtipoBox" unique_id=1386029888]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_6lsvr")
+theme_override_constants/arrow_margin = 4
+
+[node name="Espaciador4" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda" unique_id=826015981]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Espaciador" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda" unique_id=873868900]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CostoBox" type="HBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda" unique_id=414456844]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda/CostoBox" unique_id=694487906]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Costo:    "
+
+[node name="CostoSelector" type="OptionButton" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda/CostoBox" unique_id=673743447]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_c4noq")
+theme_override_constants/arrow_margin = 4
+item_count = 8
+popup/item_0/text = "cualquiera"
+popup/item_0/id = 6
+popup/item_1/text = "fuerza"
+popup/item_1/id = 0
+popup/item_2/text = "destreza"
+popup/item_2/id = 2
+popup/item_3/text = "constitucion"
+popup/item_3/id = 3
+popup/item_4/text = "sabiduria"
+popup/item_4/id = 1
+popup/item_5/text = "inteligencia"
+popup/item_5/id = 4
+popup/item_6/text = "carisma"
+popup/item_6/id = 5
+popup/item_7/text = "dinero"
+popup/item_7/id = 7
+
+[node name="Espaciador5" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer" unique_id=1577841478]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="FiltrosDerecha" type="VBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer" unique_id=1820278189]
+custom_minimum_size = Vector2(146, 0)
+layout_mode = 2
+
+[node name="ModAtributoBox" type="HBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosDerecha" unique_id=1536744687]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosDerecha/ModAtributoBox" unique_id=1204561523]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Mod atributo: "
+
+[node name="AtributoSelector" type="OptionButton" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosDerecha/ModAtributoBox" unique_id=1722244479]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_xct4h")
+theme_override_constants/arrow_margin = 4
+item_count = 7
+popup/item_0/text = "cualquiera"
+popup/item_0/id = 6
+popup/item_1/text = "fuerza"
+popup/item_1/id = 0
+popup/item_2/text = "destreza"
+popup/item_2/id = 2
+popup/item_3/text = "constitucion"
+popup/item_3/id = 3
+popup/item_4/text = "sabiduria"
+popup/item_4/id = 1
+popup/item_5/text = "inteligencia"
+popup/item_5/id = 4
+popup/item_6/text = "carisma"
+popup/item_6/id = 5
+
+[node name="UnicaCB" type="CheckBox" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosDerecha" unique_id=375354559]
+layout_mode = 2
+theme_override_constants/h_separation = 2
+theme_override_font_sizes/font_size = 25
+text = "unica"
+
+[node name="Espaciador3" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros" unique_id=1610927681]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay" unique_id=90841134]
+custom_minimum_size = Vector2(3, 0)
+custom_maximum_size = Vector2(3, -1)
+layout_mode = 2
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="FiltrosBusqueda" type="VBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay" unique_id=735586340]
+custom_maximum_size = Vector2(345, -1)
+layout_mode = 2
+
+[node name="BusquedaLabel" type="Label" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda" unique_id=1893279688]
+custom_minimum_size = Vector2(352, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Busqueda"
+
+[node name="Espaciador2" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda" unique_id=1866598766]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda" unique_id=340670212]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda/HBoxContainer2" unique_id=1816672632]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "buscar por titulo"
+
+[node name="Espaciador" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda" unique_id=2024859383]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda" unique_id=565800246]
+layout_mode = 2
+
+[node name="Espaciador2" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda/HBoxContainer" unique_id=1697357793]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="idCheckBox" type="CheckBox" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda/HBoxContainer" unique_id=330233420]
+layout_mode = 2
+button_group = ExtResource("2_55plg")
+text = " id"
+
+[node name="Espaciador" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda/HBoxContainer" unique_id=1257152746]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="tituloCheckBox" type="CheckBox" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda/HBoxContainer" unique_id=1946830433]
+layout_mode = 2
+button_pressed = true
+button_group = ExtResource("2_55plg")
+text = "Titulo"
+
+[node name="Espaciador3" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda/HBoxContainer" unique_id=2087278660]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Espaciador4" type="Control" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda" unique_id=206626698]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect3" type="ColorRect" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay" unique_id=154442637]
+custom_minimum_size = Vector2(3, 0)
+custom_maximum_size = Vector2(3, -1)
+layout_mode = 2
+size_flags_horizontal = 10
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="CartaDisplay" type="PanelContainer" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay" unique_id=1197764270]
+custom_minimum_size = Vector2(230, 270)
+custom_maximum_size = Vector2(230, 270)
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_styles/panel = SubResource("StyleBoxFlat_55plg")
+
+[node name="ColorRect5" type="ColorRect" parent="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay" unique_id=1277480493]
+custom_minimum_size = Vector2(3, 0)
+custom_maximum_size = Vector2(3, -1)
+layout_mode = 2
+size_flags_horizontal = 10
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="ColorRect" type="ColorRect" parent="PanelContainer/VSplitContainer" unique_id=1184087466]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelContainer/VSplitContainer" unique_id=1928309620]
+custom_minimum_size = Vector2(0, 220)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Cartas" type="GridContainer" parent="PanelContainer/VSplitContainer/ScrollContainer" unique_id=1317446679]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 12
+columns = 7
+
+[node name="ColorRect2" type="ColorRect" parent="PanelContainer/VSplitContainer" unique_id=836311631]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_vertical = 10
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/VSplitContainer" unique_id=367592641]
+layout_mode = 2
+
+[node name="AtrasButton" type="Button" parent="PanelContainer/VSplitContainer/HBoxContainer" unique_id=1159850203]
+layout_mode = 2
+text = "Atras"
+
+[node name="Espaciador" type="Control" parent="PanelContainer/VSplitContainer/HBoxContainer" unique_id=1072366851]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CantidadLabel" type="Label" parent="PanelContainer/VSplitContainer/HBoxContainer" unique_id=119364317]
+layout_mode = 2
+
+[node name="Espaciador2" type="Control" parent="PanelContainer/VSplitContainer/HBoxContainer" unique_id=823088062]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="EliminarCartaButton" type="Button" parent="PanelContainer/VSplitContainer/HBoxContainer" unique_id=1939957097]
+layout_mode = 2
+theme_override_styles/disabled = SubResource("StyleBoxFlat_wncp3")
+disabled = true
+text = "Eliminar"
+
+[node name="EditarCartaButton" type="Button" parent="PanelContainer/VSplitContainer/HBoxContainer" unique_id=1781335842]
+layout_mode = 2
+theme_override_styles/disabled = SubResource("StyleBoxFlat_wncp3")
+disabled = true
+text = "Editar"
+
+[node name="CrearCartaButton" type="Button" parent="PanelContainer/VSplitContainer/HBoxContainer" unique_id=862886282]
+layout_mode = 2
+text = "Crear"
+
+[connection signal="item_selected" from="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda/TipoBox/TipoSelector" to="." method="_on_tipo_selector_item_selected"]
+[connection signal="item_selected" from="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda/SubtipoBox/SubtipoSelector" to="." method="_on_subtipo_selector_item_selected"]
+[connection signal="item_selected" from="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosIzquierda/CostoBox/CostoSelector" to="." method="_on_costo_selector_item_selected"]
+[connection signal="item_selected" from="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosDerecha/ModAtributoBox/AtributoSelector" to="." method="_on_atributo_selector_item_selected"]
+[connection signal="toggled" from="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/Filtros/HBoxContainer/FiltrosDerecha/UnicaCB" to="." method="_on_unica_cb_toggled"]
+[connection signal="text_changed" from="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda/HBoxContainer2/LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="toggled" from="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda/HBoxContainer/idCheckBox" to="." method="_on_id_check_box_toggled"]
+[connection signal="toggled" from="PanelContainer/VSplitContainer/PanelFiltros/FiltrosDisplay/FiltrosBusqueda/HBoxContainer/tituloCheckBox" to="." method="_on_titulo_check_box_toggled"]
+[connection signal="pressed" from="PanelContainer/VSplitContainer/HBoxContainer/AtrasButton" to="." method="_on_atras_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VSplitContainer/HBoxContainer/EliminarCartaButton" to="." method="_on_eliminar_carta_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VSplitContainer/HBoxContainer/EditarCartaButton" to="." method="_on_editar_carta_button_pressed"]
+[connection signal="pressed" from="PanelContainer/VSplitContainer/HBoxContainer/CrearCartaButton" to="." method="_on_crear_carta_button_pressed"]

@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://djfkk6xkdnq2n"]
+
+[ext_resource type="Script" uid="uid://bvv5m1lehkm4s" path="res://StartUI/personaje_listado.gd" id="1_7i888"]
+[ext_resource type="Texture2D" uid="uid://bdpk8axefct2g" path="res://Assets/Icons/edit.svg" id="2_7i888"]
+[ext_resource type="Texture2D" uid="uid://ovyxc1wa00qn" path="res://Assets/Icons/delete.svg" id="3_t4vlt"]
+
+[node name="PersonajeListado" type="Control" unique_id=338764798]
+custom_minimum_size = Vector2(0, 56)
+custom_maximum_size = Vector2(-1, 56)
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+script = ExtResource("1_7i888")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=140918274]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 56.0
+grow_horizontal = 2
+theme_override_constants/separation = 8
+
+[node name="Nombre" type="Label" parent="HBoxContainer" unique_id=1437781470]
+layout_mode = 2
+
+[node name="Espaciador" type="Control" parent="HBoxContainer" unique_id=1721966832]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SeleccionarButton" type="Button" parent="HBoxContainer" unique_id=1511590500]
+layout_mode = 2
+text = "Seleccionar"
+
+[node name="EditarButton" type="TextureButton" parent="HBoxContainer" unique_id=468291973]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture_normal = ExtResource("2_7i888")
+texture_pressed = ExtResource("2_7i888")
+texture_hover = ExtResource("2_7i888")
+stretch_mode = 5
+
+[node name="DeleteButton" type="TextureButton" parent="HBoxContainer" unique_id=550432776]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture_normal = ExtResource("3_t4vlt")
+texture_pressed = ExtResource("3_t4vlt")
+texture_hover = ExtResource("3_t4vlt")
+stretch_mode = 5
+
+[connection signal="pressed" from="HBoxContainer/SeleccionarButton" to="." method="_on_seleccionar_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/EditarButton" to="." method="_on_editar_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/DeleteButton" to="." method="_on_delete_button_pressed"]

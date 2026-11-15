@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://cmxpn4av8uon6"]
+
+[ext_resource type="Script" uid="uid://bqi7gq5jfl71b" path="res://PersonajeLogic/HojaPersonaje/casilla_dado.gd" id="1_042wn"]
+[ext_resource type="Theme" uid="uid://dk2hptbtd348b" path="res://Assets/default_theme.tres" id="2_042wn"]
+[ext_resource type="Texture2D" uid="uid://cgx60uvh77nu" path="res://Assets/Icons/up.svg" id="3_x4ghk"]
+[ext_resource type="Texture2D" uid="uid://s01umbaeby5h" path="res://Assets/Icons/down.svg" id="4_2tyuu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_idp4b"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.06666667, 0.06666667, 0.06666667, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="CasillaDado" type="Control" unique_id=142226135]
+custom_minimum_size = Vector2(134, 100)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 100.0
+offset_bottom = 100.0
+theme = ExtResource("2_042wn")
+script = ExtResource("1_042wn")
+
+[node name="Borde" type="PanelContainer" parent="." unique_id=825993989]
+custom_minimum_size = Vector2(100, 100)
+custom_maximum_size = Vector2(100, 100)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 100.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_idp4b")
+
+[node name="Control" type="Control" parent="." unique_id=1728275124]
+custom_maximum_size = Vector2(30, 30)
+anchors_preset = 0
+offset_left = 96.0
+offset_top = 50.0
+offset_right = 96.0
+offset_bottom = 50.0
+size_flags_horizontal = 8
+size_flags_vertical = 4
+
+[node name="Cantidad" type="Label" parent="Control" unique_id=334448202]
+layout_mode = 0
+offset_left = 11.0
+offset_top = -20.0
+offset_right = 28.0
+offset_bottom = 18.0
+theme = ExtResource("2_042wn")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "0"
+
+[node name="UpButton" type="TextureButton" parent="Control" unique_id=1515083235]
+layout_mode = 0
+offset_left = 2.0
+offset_top = -47.0
+offset_right = 38.0
+offset_bottom = -11.0
+texture_normal = ExtResource("3_x4ghk")
+
+[node name="DownButton" type="TextureButton" parent="Control" unique_id=1669042549]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 9.0
+offset_right = 38.0
+offset_bottom = 45.0
+texture_normal = ExtResource("4_2tyuu")
+
+[node name="Boton" type="TextureButton" parent="." unique_id=857747445]
+z_index = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+offset_right = 100.0
+offset_bottom = 100.0
+
+[connection signal="pressed" from="Control/UpButton" to="." method="_on_up_button_pressed"]
+[connection signal="pressed" from="Control/DownButton" to="." method="_on_down_button_pressed"]
+[connection signal="mouse_entered" from="Boton" to="." method="_on_boton_mouse_entered"]
+[connection signal="mouse_exited" from="Boton" to="." method="_on_boton_mouse_exited"]
+[connection signal="pressed" from="Boton" to="." method="_on_boton_pressed"]

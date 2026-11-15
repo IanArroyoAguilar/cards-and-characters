@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://cik3pkgd1bp0s"]
+
+[ext_resource type="Theme" uid="uid://bclakhkch6rrj" path="res://Assets/tema_claro.tres" id="1_870yu"]
+[ext_resource type="Script" uid="uid://bn0eq2v8csdli" path="res://Cartas/carta.gd" id="2_870yu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h8as8"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.08411435, 0.09047561, 0.21790513, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.03116982, 1.255611e-05, 0.16741848, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_urs3h"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6666667, 0.6627451, 0.9882353, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_870yu"]
+content_margin_left = 16.0
+content_margin_top = 4.0
+content_margin_right = 16.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6666667, 0.6627451, 0.9882353, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[node name="Carta" type="Control" unique_id=1334711333]
+layout_mode = 3
+anchors_preset = 0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_870yu")
+script = ExtResource("2_870yu")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=740756897]
+custom_minimum_size = Vector2(230, 270)
+custom_maximum_size = Vector2(230, 270)
+layout_mode = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_h8as8")
+
+[node name="Divisor" type="VBoxContainer" parent="PanelContainer" unique_id=201112128]
+layout_mode = 2
+
+[node name="Header" type="HBoxContainer" parent="PanelContainer/Divisor" unique_id=1788126723]
+custom_minimum_size = Vector2(0, 38)
+custom_maximum_size = Vector2(-1, 38)
+layout_mode = 2
+
+[node name="Espaciador" type="Control" parent="PanelContainer/Divisor/Header" unique_id=920248725]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Titulo" type="Label" parent="PanelContainer/Divisor/Header" unique_id=2037818885]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6674533, 0.6638301, 0.9888763, 1)
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="Espaciador2" type="Control" parent="PanelContainer/Divisor/Header" unique_id=2128258845]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Costo" type="Label" parent="PanelContainer/Divisor/Header" unique_id=814288767]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6666667, 0.6627451, 0.9882353, 1)
+theme_override_font_sizes/font_size = 15
+
+[node name="Espaciador3" type="Control" parent="PanelContainer/Divisor/Header" unique_id=141761891]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+
+[node name="Cuerpo" type="PanelContainer" parent="PanelContainer/Divisor" unique_id=377865931]
+custom_minimum_size = Vector2(0, 188)
+custom_maximum_size = Vector2(-1, 188)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_urs3h")
+
+[node name="Divisor" type="VBoxContainer" parent="PanelContainer/Divisor/Cuerpo" unique_id=409816702]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="DescripcionLabel" type="Label" parent="PanelContainer/Divisor/Cuerpo/Divisor" unique_id=461699683]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Descripción:"
+
+[node name="DescripcionTexto" type="RichTextLabel" parent="PanelContainer/Divisor/Cuerpo/Divisor" unique_id=2093722718]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_font_size = 14
+theme_override_font_sizes/bold_italics_font_size = 14
+theme_override_font_sizes/italics_font_size = 14
+theme_override_font_sizes/mono_font_size = 14
+fit_content = true
+
+[node name="Tailer" type="PanelContainer" parent="PanelContainer/Divisor" unique_id=1131651524]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_styles/panel = SubResource("StyleBoxFlat_870yu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/Divisor/Tailer" unique_id=2002203614]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Separador" type="HBoxContainer" parent="PanelContainer/Divisor/Tailer/VBoxContainer" unique_id=2012106506]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Espaciador2" type="Control" parent="PanelContainer/Divisor/Tailer/VBoxContainer/Separador" unique_id=1844048487]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TipoLabel" type="Label" parent="PanelContainer/Divisor/Tailer/VBoxContainer/Separador" unique_id=238187764]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+
+[node name="Espaciador" type="Control" parent="PanelContainer/Divisor/Tailer/VBoxContainer/Separador" unique_id=1843521719]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SubtipoLabel" type="Label" parent="PanelContainer/Divisor/Tailer/VBoxContainer/Separador" unique_id=35265584]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+
+[node name="Espaciador3" type="Control" parent="PanelContainer/Divisor/Tailer/VBoxContainer/Separador" unique_id=1945653999]
+layout_mode = 2
+size_flags_horizontal = 3

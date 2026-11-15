@@ -1,0 +1,634 @@
+[gd_scene format=3 uid="uid://c3wkmhugkhwb4"]
+
+[ext_resource type="Theme" uid="uid://bclakhkch6rrj" path="res://Assets/tema_claro.tres" id="1_3s8kr"]
+[ext_resource type="Script" uid="uid://c2svcfgmkxb50" path="res://Cartas/creacion_edicion_carta.gd" id="2_oa3fd"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ey28"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.84705883, 0.8509804, 0.8901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3s8kr"]
+bg_color = Color(0.84705883, 0.8509804, 0.8901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oa3fd"]
+bg_color = Color(0.84705883, 0.8509804, 0.8901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mv6eu"]
+bg_color = Color(0.84705883, 0.8509804, 0.8901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8cdpn"]
+bg_color = Color(0.84705883, 0.8509804, 0.8901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q3rvc"]
+bg_color = Color(0.08411435, 0.09047561, 0.21790513, 1)
+border_color = Color(0.03116982, 1.255611e-05, 0.16741848, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="CreacionEdicionCarta" type="Control" unique_id=858125824]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme = ExtResource("1_3s8kr")
+script = ExtResource("2_oa3fd")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=930208554]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 1148.0
+offset_bottom = 644.0
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="PanelCreacion" type="PanelContainer" parent="." unique_id=875162873]
+custom_maximum_size = Vector2(1128, -1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_2ey28")
+
+[node name="Hbox" type="HBoxContainer" parent="PanelCreacion" unique_id=1974501112]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="ColorRect4" type="ColorRect" parent="PanelCreacion/Hbox" unique_id=1041231147]
+custom_minimum_size = Vector2(3, 0)
+custom_maximum_size = Vector2(3, -1)
+layout_mode = 2
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="Informacion" type="VBoxContainer" parent="PanelCreacion/Hbox" unique_id=782078760]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion" unique_id=1060617638]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Creacion de Cartas"
+
+[node name="Espaciador4" type="Control" parent="PanelCreacion/Hbox/Informacion" unique_id=129207155]
+custom_maximum_size = Vector2(-1, 20)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion" unique_id=2023955040]
+layout_mode = 2
+
+[node name="TituloBox" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/HBoxContainer" unique_id=685282336]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/HBoxContainer/TituloBox" unique_id=754450168]
+layout_mode = 2
+theme_override_font_sizes/font_size = 23
+text = "Titulo: "
+
+[node name="TituloInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/HBoxContainer/TituloBox" unique_id=1233233566]
+custom_maximum_size = Vector2(-1, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 30
+placeholder_text = "Pon el titulo"
+
+[node name="UnicaCB" type="CheckBox" parent="PanelCreacion/Hbox/Informacion/HBoxContainer" unique_id=390849913]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/h_separation = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_3s8kr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oa3fd")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mv6eu")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_8cdpn")
+text = "unica"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion" unique_id=933472319]
+layout_mode = 2
+theme_override_constants/separation = 27
+
+[node name="TipoBox" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/HBoxContainer2" unique_id=1657188315]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/HBoxContainer2/TipoBox" unique_id=167421093]
+layout_mode = 2
+theme_override_font_sizes/font_size = 23
+text = "Tipo: "
+
+[node name="TipoSelector" type="OptionButton" parent="PanelCreacion/Hbox/Informacion/HBoxContainer2/TipoBox" unique_id=1188771414]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 0
+theme_override_font_sizes/font_size = 20
+theme_override_constants/arrow_margin = 4
+item_count = 4
+popup/item_0/text = "Habilidad"
+popup/item_0/id = 0
+popup/item_1/text = "Hechizo"
+popup/item_1/id = 1
+popup/item_2/text = "Equipamiento"
+popup/item_2/id = 2
+popup/item_3/text = "Consumible"
+popup/item_3/id = 3
+
+[node name="SubtipoBox" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/HBoxContainer2" unique_id=1171123400]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/HBoxContainer2/SubtipoBox" unique_id=310572430]
+layout_mode = 2
+theme_override_font_sizes/font_size = 23
+text = "Subtipo: "
+
+[node name="SubtipoSelector" type="OptionButton" parent="PanelCreacion/Hbox/Informacion/HBoxContainer2/SubtipoBox" unique_id=1227801136]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 0
+theme_override_font_sizes/font_size = 20
+theme_override_constants/arrow_margin = 4
+
+[node name="DescripcionBox" type="VBoxContainer" parent="PanelCreacion/Hbox/Informacion" unique_id=493107554]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/DescripcionBox" unique_id=2100477284]
+layout_mode = 2
+theme_override_font_sizes/font_size = 23
+text = "Descripcion: "
+
+[node name="DescripcionInput" type="TextEdit" parent="PanelCreacion/Hbox/Informacion/DescripcionBox" unique_id=1133439453]
+custom_minimum_size = Vector2(0, 125)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
+placeholder_text = "Pon la descripcion"
+backspace_deletes_composite_character_enabled = true
+wrap_mode = 1
+indent_wrapped_lines = true
+scroll_smooth = true
+scroll_fit_content_width = true
+minimap_draw = true
+caret_blink = true
+
+[node name="ColorRect" type="ColorRect" parent="PanelCreacion/Hbox/Informacion" unique_id=1739492474]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="Numericos" type="HSplitContainer" parent="PanelCreacion/Hbox/Informacion" unique_id=943283646]
+layout_mode = 2
+theme_override_constants/separation = 44
+split_offsets = PackedInt32Array(316, 363)
+split_offset = 316
+
+[node name="BonificadoresAtributos" type="VBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos" unique_id=1232781791]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos" unique_id=981357195]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Bonificadores Atributos"
+
+[node name="GridContainer" type="GridContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos" unique_id=326232125]
+layout_mode = 2
+theme_override_constants/h_separation = 72
+theme_override_constants/v_separation = 18
+columns = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer" unique_id=352037241]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer" unique_id=2123217049]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Fuerza           "
+
+[node name="FuerzaInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer" unique_id=1501358026]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer" unique_id=1687382079]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer2" unique_id=2061931530]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Sabiduría    "
+
+[node name="SabiduriaInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer2" unique_id=634464530]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer" unique_id=768591468]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer3" unique_id=1803414399]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Destreza      "
+
+[node name="DestrezaInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer3" unique_id=36984630]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer" unique_id=578967912]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer4" unique_id=513237438]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Inteligencia"
+
+[node name="InteligenciaInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer4" unique_id=407565810]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer" unique_id=1994547962]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer5" unique_id=206036280]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Contitucion"
+
+[node name="ConstitucionInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer5" unique_id=107024649]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer" unique_id=641034940]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer6" unique_id=1963908100]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Carisma       "
+
+[node name="CarismaInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer6" unique_id=182954107]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="ColorRect" type="ColorRect" parent="PanelCreacion/Hbox/Informacion/Numericos" unique_id=1760045843]
+custom_minimum_size = Vector2(3, 0)
+custom_maximum_size = Vector2(3, -1)
+layout_mode = 2
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="Costo" type="VBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos" unique_id=1372696459]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo" unique_id=1504965359]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/HBoxContainer2" unique_id=262237450]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Costo"
+
+[node name="Espaciador" type="Control" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/HBoxContainer2" unique_id=677962462]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/HBoxContainer2" unique_id=2106067114]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/HBoxContainer2/HBoxContainer" unique_id=207168506]
+layout_mode = 2
+theme_override_font_sizes/font_size = 41
+text = "$"
+
+[node name="DineroInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/HBoxContainer2/HBoxContainer" unique_id=1350157310]
+custom_minimum_size = Vector2(80, 48)
+custom_maximum_size = Vector2(80, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 2
+max_length = 4
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="GridContainer" type="GridContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo" unique_id=1647989183]
+layout_mode = 2
+theme_override_constants/h_separation = 52
+theme_override_constants/v_separation = 18
+columns = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer" unique_id=1032574633]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer" unique_id=414655633]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "FUE"
+
+[node name="FUEInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer" unique_id=1641455744]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer" unique_id=1117657362]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer2" unique_id=2115392275]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "SAB"
+
+[node name="SABInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer2" unique_id=162712819]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer" unique_id=469694575]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer3" unique_id=1657260025]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "DES"
+
+[node name="DESInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer3" unique_id=731164407]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer" unique_id=1766259352]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer4" unique_id=1115073674]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "INT   "
+
+[node name="INTInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer4" unique_id=2067604979]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="HBoxContainer5" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer" unique_id=1085369437]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer5" unique_id=114298529]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "CON"
+
+[node name="CONInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer5" unique_id=258984046]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer" unique_id=1143544630]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer6" unique_id=932752824]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "CAR"
+
+[node name="CARInput" type="LineEdit" parent="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer6" unique_id=1803516371]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "0"
+alignment = 1
+max_length = 2
+keep_editing_on_text_submit = true
+expand_to_text_length = true
+virtual_keyboard_type = 2
+
+[node name="Espaciador5" type="Control" parent="PanelCreacion/Hbox" unique_id=619404276]
+custom_maximum_size = Vector2(25, -1)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect6" type="ColorRect" parent="PanelCreacion/Hbox" unique_id=800600721]
+custom_minimum_size = Vector2(3, 0)
+custom_maximum_size = Vector2(3, -1)
+layout_mode = 2
+size_flags_horizontal = 10
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="Control" type="Control" parent="PanelCreacion/Hbox" unique_id=383366149]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelCreacion/Hbox/Control" unique_id=2081507855]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Espaciador6" type="Control" parent="PanelCreacion/Hbox/Control/VBoxContainer" unique_id=1962680103]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="PanelCreacion/Hbox/Control/VBoxContainer" unique_id=879718825]
+layout_mode = 2
+text = "Modifica la carta"
+horizontal_alignment = 1
+
+[node name="Espaciador7" type="Control" parent="PanelCreacion/Hbox/Control/VBoxContainer" unique_id=2086589958]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CartaDisplay" type="PanelContainer" parent="PanelCreacion/Hbox/Control/VBoxContainer" unique_id=1320273474]
+custom_minimum_size = Vector2(230, 270)
+custom_maximum_size = Vector2(230, 270)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 8
+theme_override_styles/panel = SubResource("StyleBoxFlat_q3rvc")
+
+[node name="ResetearButton" type="Button" parent="PanelCreacion/Hbox/Control/VBoxContainer" unique_id=602755879]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 22
+text = "Resetear"
+
+[node name="Espaciador5" type="Control" parent="PanelCreacion/Hbox/Control/VBoxContainer" unique_id=68576437]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelCreacion/Hbox/Control/VBoxContainer" unique_id=1618689302]
+layout_mode = 2
+
+[node name="AtrasButton" type="Button" parent="PanelCreacion/Hbox/Control/VBoxContainer/HBoxContainer" unique_id=1654382986]
+layout_mode = 2
+text = "Atras"
+
+[node name="Espaciador" type="Control" parent="PanelCreacion/Hbox/Control/VBoxContainer/HBoxContainer" unique_id=87282601]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ListoButton" type="Button" parent="PanelCreacion/Hbox/Control/VBoxContainer/HBoxContainer" unique_id=2001308947]
+layout_mode = 2
+text = "Listo"
+
+[node name="ColorRect5" type="ColorRect" parent="PanelCreacion/Hbox" unique_id=585378953]
+custom_minimum_size = Vector2(3, 0)
+custom_maximum_size = Vector2(3, -1)
+layout_mode = 2
+size_flags_horizontal = 10
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/HBoxContainer/TituloBox/TituloInput" to="." method="_on_titulo_input_text_changed"]
+[connection signal="toggled" from="PanelCreacion/Hbox/Informacion/HBoxContainer/UnicaCB" to="." method="_on_unica_cb_toggled"]
+[connection signal="item_selected" from="PanelCreacion/Hbox/Informacion/HBoxContainer2/TipoBox/TipoSelector" to="." method="_on_tipo_selector_item_selected"]
+[connection signal="item_selected" from="PanelCreacion/Hbox/Informacion/HBoxContainer2/SubtipoBox/SubtipoSelector" to="." method="_on_subtipo_selector_item_selected"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/DescripcionBox/DescripcionInput" to="." method="_on_descripcion_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer/FuerzaInput" to="." method="_on_fuerza_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer2/SabiduriaInput" to="." method="_on_sabiduria_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer3/DestrezaInput" to="." method="_on_destreza_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer4/InteligenciaInput" to="." method="_on_inteligencia_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer5/ConstitucionInput" to="." method="_on_constitucion_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/BonificadoresAtributos/GridContainer/HBoxContainer6/CarismaInput" to="." method="_on_carisma_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/Costo/HBoxContainer2/HBoxContainer/DineroInput" to="." method="_on_dinero_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer/FUEInput" to="." method="_on_fue_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer2/SABInput" to="." method="_on_sab_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer3/DESInput" to="." method="_on_des_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer4/INTInput" to="." method="_on_int_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer5/CONInput" to="." method="_on_con_input_text_changed"]
+[connection signal="text_changed" from="PanelCreacion/Hbox/Informacion/Numericos/Costo/GridContainer/HBoxContainer6/CARInput" to="." method="_on_car_input_text_changed"]
+[connection signal="pressed" from="PanelCreacion/Hbox/Control/VBoxContainer/ResetearButton" to="." method="_on_resetear_button_pressed"]
+[connection signal="pressed" from="PanelCreacion/Hbox/Control/VBoxContainer/HBoxContainer/AtrasButton" to="." method="_on_atras_button_pressed"]
+[connection signal="pressed" from="PanelCreacion/Hbox/Control/VBoxContainer/HBoxContainer/ListoButton" to="." method="_on_listo_button_pressed"]

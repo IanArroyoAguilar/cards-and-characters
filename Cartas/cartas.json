@@ -1,0 +1,362 @@
+[
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_fuerza": 3.0
+		},
+		"descripcion": "Entras en un estado de Furia durante (1 + Nivel) rondas. Mientras estás furioso, tu instinto de combate se agudiza.",
+		"id": "pasiva_furia",
+		"subtipo": "Activa",
+		"tipo": "Habilidad",
+		"titulo": "Furia",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {
+			"destreza": 2.0
+		},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_destreza": 1.0,
+			"puntos_fuerza": 2.0
+		},
+		"descripcion": "No sufres penalizaciones al lanzar cualquier tipo de arma. Mientras estás en Furia, puedes lanzar dos armas por turno. Las piedras cuentan como armas improvisadas.",
+		"id": "pasiva_lanzamiento_preciso",
+		"subtipo": "Pasiva",
+		"tipo": "Habilidad",
+		"titulo": "Lanzamiento Preciso",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_fuerza": 3.0
+		},
+		"descripcion": "Puedes usar dos espadas al mismo tiempo. Obtienes un ataque extra con la mano secundaria. Mientras estás en Furia, el primer ataque es con +2 al ataque y el segundo es plano.",
+		"id": "pasiva_maestro_espadas",
+		"subtipo": "Pasiva",
+		"tipo": "Habilidad",
+		"titulo": "Maestro de Espadas",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {
+			"constitucion": 2.0
+		},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_constitucion": 2.0,
+			"puntos_fuerza": 2.0
+		},
+		"descripcion": "Obtienes +2 a tu CA. Mientras estás en Furia, solo recibes la mitad del daño físico de los ataques.",
+		"id": "pasiva_piel_hierro",
+		"subtipo": "Pasiva",
+		"tipo": "Habilidad",
+		"titulo": "Piel de Hierro",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_destreza": 2.0
+		},
+		"descripcion": "Cuando atacas con una daga mientras estás oculto, el daño base se multiplica por (3 + Nivel).",
+		"id": "activa_punalada_rastrera",
+		"subtipo": "Activa",
+		"tipo": "Habilidad",
+		"titulo": "Puñalada Rastrera",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {
+			"destreza": 2.0
+		},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_destreza": 3.0
+		},
+		"descripcion": "En combate, puedes usar tu movimiento para esconderte (tirada de Destreza). Si tenías a un enemigo encarando, puedes atacarlo directamente sin penalización.",
+		"id": "pasiva_sombras",
+		"subtipo": "Pasiva",
+		"tipo": "Habilidad",
+		"titulo": "Movimiento Sombrío",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {
+			"carisma": 2.0,
+			"sabiduria": 1.0
+		},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_carisma": 2.0,
+			"puntos_destreza": 1.0
+		},
+		"descripcion": "Comprendes casi todos los lenguajes. Escuchas conversaciones claras hasta 30 metros y puedes combatir en la oscuridad guiándote por el oído (usando Sabiduría).",
+		"id": "pasiva_oido_agudo",
+		"subtipo": "Pasiva",
+		"tipo": "Habilidad",
+		"titulo": "Sentidos Agudos",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_sabiduria": 2.0
+		},
+		"descripcion": "Puedes comunicarte con animales. Puedes convencer a un animal de que te ayude por 2 días superando una tirada de Sabiduría (DC 12 pequeños, 15 medianos, 18 grandes).",
+		"id": "pasiva_amigo_animales",
+		"subtipo": "Pasiva",
+		"tipo": "Habilidad",
+		"titulo": "Vínculo Animal",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_carisma": 3.0
+		},
+		"descripcion": "Invocas una horda de animales pequeños (3d4 + 1d4 x Nivel). Hacen 1d2 de daño y mantienen al enemigo ocupado (no puede atacar) hasta que los mate.",
+		"id": "activa_invocar_horda",
+		"subtipo": "Activa",
+		"tipo": "Habilidad",
+		"titulo": "Rey de Alimañas",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_sabiduria": 3.0
+		},
+		"descripcion": "Obtienes +3 Favores. Un Favor te permite repetir cualquier tirada de d20 que hagas en el día (se recupera tras descanso largo).",
+		"id": "pasiva_bendicion_divina",
+		"subtipo": "Pasiva",
+		"tipo": "Habilidad",
+		"titulo": "Favor Divino",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_inteligencia": 2.0
+		},
+		"descripcion": "Recuperas puntos de maná extra tras descansar: +(1d4 x Nivel) en un descanso corto y +(1d8 x Nivel) en un descanso largo.",
+		"id": "pasiva_flujo_mana",
+		"subtipo": "Pasiva",
+		"tipo": "Habilidad",
+		"titulo": "Flujo de Maná",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {
+			"constitucion": -2.0
+		},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_inteligencia": 3.0
+		},
+		"descripcion": "Tus hechizos ofensivos hacen +(1d4 x Nivel) de daño extra. Ganancia: +1 a tiradas de hechizo ofensivo. Penalización: -2 de Constitución.",
+		"id": "pasiva_canon_cristal",
+		"subtipo": "Pasiva",
+		"tipo": "Habilidad",
+		"titulo": "Canalizador de Cristal",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_carisma": 2.0,
+			"puntos_inteligencia": 2.0
+		},
+		"descripcion": "Manos Ardientes: Liberas un cono de llamas que inflige (Nivel x d2) de daño de fuego en área.\nBola de Fuego: Lanzas una esfera explosiva a distancia que inflige (Nivel x d4) de daño en un área de 3 metros.\nGolpe de Llamas: Invocas un pilar de fuego divino que inflige (Nivel x d6) de daño a un objetivo.",
+		"id": "hechizo_pack_fuego",
+		"subtipo": "Pack",
+		"tipo": "Hechizo",
+		"titulo": "Pack: Magia de Fuego",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_carisma": 1.0,
+			"puntos_inteligencia": 2.0
+		},
+		"descripcion": "Ilusión Dinámica: Creas una ilusión visual y sonora de hasta (Nivel) metros cúbicos. Si la tocan, parece real, pero es intangible. Puedes programarla para que se active bajo una condición específica.\nDisfraz: Alteras tu apariencia y ropa para parecer otra criatura conocida durante 1 hora.",
+		"id": "hechizo_pack_ilusiones",
+		"subtipo": "Pack",
+		"tipo": "Hechizo",
+		"titulo": "Pack: Magia Ilusoria",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_carisma": 2.0,
+			"puntos_sabiduria": 2.0
+		},
+		"descripcion": "Sanar Heridas: Tu toque regenera (Nivel x d2) puntos de vida a un ser vivo.\nCanción Sanadora: Una melodía que restaura (1d4 x Nivel) de vida a un aliado cercano.\nCura en Masa: Todos los aliados en rango cercano curan (Nivel x d6) puntos de vida (Uso único por descanso largo).",
+		"id": "hechizo_pack_curacion",
+		"subtipo": "Pack",
+		"tipo": "Hechizo",
+		"titulo": "Pack: Magia Restauradora",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_destreza": 2.0,
+			"puntos_inteligencia": 2.0
+		},
+		"descripcion": "Caída de Pluma: Disminuyes tu velocidad de caída para aterrizar seguro.\nLevitar: Flotas verticalmente a voluntad.\nVolar: Obtienes velocidad de vuelo durante (Nivel) rondas.\nZancada Brumosa: Te teletransportas a un lugar cercano en una nube de humo.",
+		"id": "hechizo_pack_movilidad",
+		"subtipo": "Pack",
+		"tipo": "Hechizo",
+		"titulo": "Pack: Alteración Espacial",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_carisma": 3.0
+		},
+		"descripcion": "Burla: Insultas mágicamente a una criatura, causando 1d4 de daño psíquico.\nOnda Sonora: Atacas a todas las criaturas en un rango cercano. Haces (Nivel x d4) de daño (o Nivel x d6 si estás cuerpo a cuerpo).\nSilencio: Creas una esfera de 3 metros de radio donde no hay ningún sonido durante (Nivel) rondas.",
+		"id": "hechizo_pack_sonido",
+		"subtipo": "Pack",
+		"tipo": "Hechizo",
+		"titulo": "Pack: Magia Sónica",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 0.0,
+			"puntos_sabiduria": 3.0
+		},
+		"descripcion": "Escudo de la Fe: Un aliado recibe +2 a su CA durante 5 rondas.\nProtección Elemental: Una criatura se vuelve inmune a fuego, hielo y electricidad.\nDisipar Magia: Cancelas un hechizo activo lanzado por otra criatura.",
+		"id": "hechizo_pack_proteccion",
+		"subtipo": "Pack",
+		"tipo": "Hechizo",
+		"titulo": "Pack: Abjuración",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 9.0
+		},
+		"descripcion": "Una hoja de acero equilibrada. Hace 1d8 de daño cortante. Se puede empuñar con una o dos manos.",
+		"id": "equipo_espada_larga",
+		"subtipo": "Arma",
+		"tipo": "Equipamiento",
+		"titulo": "Espada Larga",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 1.0
+		},
+		"descripcion": "Arma corta y ligera. Hace 1d4 de daño. Puede usarse en cuerpo a cuerpo o lanzarse a distancia.",
+		"id": "equipo_daga",
+		"subtipo": "Arma",
+		"tipo": "Equipamiento",
+		"titulo": "Daga",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 8.0
+		},
+		"descripcion": "Requiere dos manos. Hace 1d8 de daño perforante a distancia.",
+		"id": "equipo_arco_largo",
+		"subtipo": "Arma",
+		"tipo": "Equipamiento",
+		"titulo": "Arco Largo",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 3.0
+		},
+		"descripcion": "Armadura ligera y flexible. Te otorga una CA base de 11 + tu modificador de Destreza.",
+		"id": "equipo_armadura_cuero",
+		"subtipo": "Armadura",
+		"tipo": "Equipamiento",
+		"titulo": "Armadura de Cuero",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 14.0
+		},
+		"descripcion": "Pesada y robusta. CA base 14 + modificador de Destreza. Requiere mucha fuerza, es imposible nadar con ella.",
+		"id": "equipo_armadura_placas",
+		"subtipo": "Armadura",
+		"tipo": "Equipamiento",
+		"titulo": "Armadura de Placas",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 5.0
+		},
+		"descripcion": "Otorga +4 a la CA. Ocupa una mano. Requiere al menos 14 de Fuerza para usarlo con eficacia.",
+		"id": "equipo_escudo_acero",
+		"subtipo": "Armadura",
+		"tipo": "Equipamiento",
+		"titulo": "Escudo de Acero",
+		"unica": true
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 2.0
+		},
+		"descripcion": "Un líquido rojo burbujeante. Al beberla, recuperas 4 puntos de vida de forma inmediata.",
+		"id": "consumible_pocion_salud",
+		"subtipo": "Comestible",
+		"tipo": "Consumible",
+		"titulo": "Poción de Salud",
+		"unica": false
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 5.0
+		},
+		"descripcion": "Una mochila con lo esencial: 2 antorchas, 6 raciones de comida, un encendedor y 20 metros de cuerda.",
+		"id": "consumible_kit_basico",
+		"subtipo": "Usable",
+		"tipo": "Consumible",
+		"titulo": "Kit de Aventurero",
+		"unica": false
+	},
+	{
+		"bonificadores_atributos": {},
+		"costo": {
+			"dinero": 1.0
+		},
+		"descripcion": "Agua consagrada. Si la bebes recuperas 1d4 de vida. Si la lanzas a criaturas impías (como no-muertos), les hace 1d6 de daño.",
+		"id": "consumible_agua_bendita",
+		"subtipo": "Usable",
+		"tipo": "Consumible",
+		"titulo": "Frasco de Agua Bendita",
+		"unica": false
+	}
+]

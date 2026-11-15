@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://clbe8afelf6ld"]
+
+[ext_resource type="Script" uid="uid://biwqa3w3t343n" path="res://Cartas/carta_button_entrada.gd" id="1_yojjh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fe28e"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.5805196, 0.5601979, 0.9834612, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ptodx"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.3647059, 0.33333334, 0.9137255, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_53rre"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.36337954, 0.33516166, 0.9143875, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wi7kv"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="CartaButtonEntrada" type="Button" unique_id=2021528928]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2.0
+offset_top = -2.0
+offset_right = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxFlat_fe28e")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ptodx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_53rre")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_wi7kv")
+script = ExtResource("1_yojjh")

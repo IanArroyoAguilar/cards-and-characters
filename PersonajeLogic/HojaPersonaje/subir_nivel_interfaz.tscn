@@ -1,0 +1,601 @@
+[gd_scene format=3 uid="uid://chjxfnt3b2jt8"]
+
+[ext_resource type="Theme" uid="uid://bclakhkch6rrj" path="res://Assets/tema_claro.tres" id="1_2j4mr"]
+[ext_resource type="Script" uid="uid://oybt82oosw5m" path="res://PersonajeLogic/HojaPersonaje/subir_nivel_interfaz.gd" id="2_p7tkb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l47dl"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.88235295, 0.8862745, 0.9254902, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qd8x"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.88235295, 0.8862745, 0.9254902, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xeuuu"]
+bg_color = Color(0.08411435, 0.09047561, 0.21790513, 1)
+border_color = Color(0.03116982, 1.255611e-05, 0.16741848, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qx5py"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.38129604, 0.29690048, 0.725828, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gdqhf"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.14393428, 0.14859968, 0.18525699, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dj3wb"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hr17e"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.88235295, 0.8862745, 0.9254902, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[node name="SubirNivelInterfaz" type="Control" unique_id=834096729]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_2j4mr")
+script = ExtResource("2_p7tkb")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1342498870]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="DivisorPrincipal" type="HBoxContainer" parent="." unique_id=1146163714]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelInformacion" type="PanelContainer" parent="DivisorPrincipal" unique_id=682015868]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Subpaneles" type="VBoxContainer" parent="DivisorPrincipal/PanelInformacion" unique_id=1520615223]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="DivisorPrincipal/PanelInformacion/Subpaneles" unique_id=2145264020]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="Atributos" type="VBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles" unique_id=2018361754]
+layout_mode = 2
+
+[node name="Header" type="HBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos" unique_id=1631629377]
+layout_mode = 2
+
+[node name="Espaciador2" type="Control" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/Header" unique_id=403488990]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos" unique_id=1967608817]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Selecciona el atributo al cual quieres sumarle un punto"
+
+[node name="HSplitContainer" type="HSplitContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos" unique_id=870831312]
+layout_mode = 2
+
+[node name="FDC" type="VBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer" unique_id=617715828]
+layout_mode = 2
+
+[node name="FormFuerza" type="HBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC" unique_id=52436016]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 6
+
+[node name="FuerzaLabel" type="Button" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormFuerza" unique_id=58911387]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Fuerza"
+
+[node name="FuerzaInput" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormFuerza" unique_id=919140331]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "10"
+
+[node name="FUE" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormFuerza" unique_id=574176882]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "+0"
+
+[node name="FormDestreza" type="HBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC" unique_id=814061316]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 6
+
+[node name="DestrezaLabel" type="Button" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormDestreza" unique_id=1608796835]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Destreza"
+
+[node name="DestrezaInput" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormDestreza" unique_id=1387230277]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "10"
+
+[node name="DES" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormDestreza" unique_id=91731837]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "+0"
+
+[node name="FormConstitucion" type="HBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC" unique_id=1260001691]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 6
+
+[node name="ConstitucionLabel" type="Button" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormConstitucion" unique_id=1061249932]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Constitución"
+
+[node name="ConstitucionInput" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormConstitucion" unique_id=1529091268]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "10"
+
+[node name="CON" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormConstitucion" unique_id=1697809674]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "+0"
+
+[node name="SIA" type="VBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer" unique_id=411733770]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="FormSabiduria" type="HBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA" unique_id=1078851895]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 6
+
+[node name="SabiduriaLabel" type="Button" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormSabiduria" unique_id=1639932101]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 26
+text = "Sabiduría"
+
+[node name="SabiduriaInput" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormSabiduria" unique_id=1914763438]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "10"
+
+[node name="SAB" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormSabiduria" unique_id=1648331443]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "+0"
+
+[node name="FormInteligencia" type="HBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA" unique_id=681420789]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 6
+
+[node name="InteligenciaLabel" type="Button" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormInteligencia" unique_id=109458672]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Inteligencia"
+
+[node name="InteligenciaInput" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormInteligencia" unique_id=195093175]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "10"
+
+[node name="INT" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormInteligencia" unique_id=973387406]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "+0"
+
+[node name="FormCarisma" type="HBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA" unique_id=146468912]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 6
+
+[node name="CarismaLabel" type="Button" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormCarisma" unique_id=443762998]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 26
+text = "Carisma"
+
+[node name="CarismaInput" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormCarisma" unique_id=1421531290]
+custom_minimum_size = Vector2(40, 48)
+custom_maximum_size = Vector2(40, -1)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "10"
+
+[node name="CAR" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormCarisma" unique_id=2003793482]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "+0"
+
+[node name="Espaciador" type="Control" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos" unique_id=1140743236]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos" unique_id=813193317]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="Botones" type="HBoxContainer" parent="DivisorPrincipal/PanelInformacion/Subpaneles" unique_id=1476456828]
+layout_mode = 2
+
+[node name="Espaciador" type="Control" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Botones" unique_id=841921743]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BackButton1" type="Button" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Botones" unique_id=1623671624]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.3
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_l47dl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2qd8x")
+text = "Atras"
+
+[node name="Espaciador2" type="Control" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Botones" unique_id=597601494]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ListoButton1" type="Button" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Botones" unique_id=1362363492]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.3
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_l47dl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2qd8x")
+text = "Listo"
+
+[node name="Espaciador3" type="Control" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Botones" unique_id=924286177]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PanelCartas" type="PanelContainer" parent="DivisorPrincipal" unique_id=1054485247]
+modulate = Color(0.5019608, 0.5019608, 0.5019608, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VSplitContainer" type="VBoxContainer" parent="DivisorPrincipal/PanelCartas" unique_id=2116680755]
+layout_mode = 2
+
+[node name="ColorRect2" type="ColorRect" parent="DivisorPrincipal/PanelCartas/VSplitContainer" unique_id=1107874296]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="HSplitContainer" type="HSplitContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer" unique_id=383573911]
+layout_mode = 2
+split_offsets = PackedInt32Array(-79)
+split_offset = -79
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer" unique_id=103294657]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Titulo" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer" unique_id=1010521677]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "Cartas Compradas"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer" unique_id=1197493182]
+custom_minimum_size = Vector2(0, 90)
+custom_maximum_size = Vector2(-1, 90)
+layout_mode = 2
+
+[node name="CartasCompradas" type="GridContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/ScrollContainer" unique_id=117106922]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+
+[node name="ColorRect2" type="ColorRect" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer" unique_id=1441167771]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_vertical = 10
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="PuntosDisponibles" type="VBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer" unique_id=1161604261]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="Header2" type="HBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles" unique_id=1711413866]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="PDisponiblesLabel" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/Header2" unique_id=704429452]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 26
+text = "Puntos Disponibles     "
+
+[node name="HSplitContainer" type="HSplitContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles" unique_id=998675979]
+custom_maximum_size = Vector2(-1, 130)
+layout_mode = 2
+
+[node name="PD_FDC" type="VBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer" unique_id=1448077206]
+layout_mode = 2
+
+[node name="FormFuerza" type="HBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_FDC" unique_id=1890407412]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = -16
+
+[node name="FuerzaLabel" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_FDC/FormFuerza" unique_id=162559262]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "FUE:      "
+
+[node name="PD_FUE" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_FDC/FormFuerza" unique_id=1323714683]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "0"
+
+[node name="FormDestreza" type="HBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_FDC" unique_id=405738612]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = -14
+
+[node name="DestrezaLabel" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_FDC/FormDestreza" unique_id=1941115328]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "DES:      "
+
+[node name="PD_DES" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_FDC/FormDestreza" unique_id=535204000]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "0"
+
+[node name="FormConstitucion" type="HBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_FDC" unique_id=1614749297]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = -24
+
+[node name="ConstitucionLabel" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_FDC/FormConstitucion" unique_id=1870236917]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "CON:        "
+
+[node name="PD_CON" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_FDC/FormConstitucion" unique_id=1776125564]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "0"
+
+[node name="PD_SIA" type="VBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer" unique_id=562108949]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="FormSabiduria" type="HBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_SIA" unique_id=2104040512]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = -9
+
+[node name="SabiduriaLabel" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_SIA/FormSabiduria" unique_id=395435985]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 26
+text = "SAB:    "
+
+[node name="PD_SAB" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_SIA/FormSabiduria" unique_id=1521450257]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "0"
+
+[node name="FormInteligencia" type="HBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_SIA" unique_id=1516164282]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = -10
+
+[node name="InteligenciaLabel" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_SIA/FormInteligencia" unique_id=43323642]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "INT:       "
+
+[node name="PD_INT" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_SIA/FormInteligencia" unique_id=120675786]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "0"
+
+[node name="FormCarisma" type="HBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_SIA" unique_id=1462785682]
+propagate_maximum_size = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = -10
+
+[node name="CarismaLabel" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_SIA/FormCarisma" unique_id=290828692]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 26
+text = "CAR:    "
+
+[node name="PD_CAR" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer/PuntosDisponibles/HSplitContainer/PD_SIA/FormCarisma" unique_id=973104186]
+layout_mode = 2
+size_flags_horizontal = 2
+text = "0"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer" unique_id=1948175004]
+layout_mode = 2
+
+[node name="CartaDisplay" type="PanelContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer2" unique_id=1303443559]
+custom_minimum_size = Vector2(230, 270)
+custom_maximum_size = Vector2(230, 270)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xeuuu")
+
+[node name="BotonComprar" type="Button" parent="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer2" unique_id=189677535]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_qx5py")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gdqhf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dj3wb")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_hr17e")
+text = "Comprar"
+
+[node name="ColorRect" type="ColorRect" parent="DivisorPrincipal/PanelCartas/VSplitContainer" unique_id=1903078859]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="Espaciador" type="Control" parent="DivisorPrincipal/PanelCartas/VSplitContainer" unique_id=49697518]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+
+[node name="Titulo" type="Label" parent="DivisorPrincipal/PanelCartas/VSplitContainer" unique_id=2021046436]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "Cartas Disponibles"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer" unique_id=1311184345]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CartasContenedor" type="GridContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer/ScrollContainer" unique_id=1268504823]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 3
+
+[node name="Espaciador2" type="Control" parent="DivisorPrincipal/PanelCartas/VSplitContainer" unique_id=737624329]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+
+[node name="ColorRect3" type="ColorRect" parent="DivisorPrincipal/PanelCartas/VSplitContainer" unique_id=1027184123]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+size_flags_vertical = 4
+color = Color(0.11229619, 0.048452795, 0.32874247, 1)
+
+[node name="Botones" type="HBoxContainer" parent="DivisorPrincipal/PanelCartas/VSplitContainer" unique_id=1984675382]
+layout_mode = 2
+
+[node name="Espaciador2" type="Control" parent="DivisorPrincipal/PanelCartas/VSplitContainer/Botones" unique_id=1876499529]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BackButton2" type="Button" parent="DivisorPrincipal/PanelCartas/VSplitContainer/Botones" unique_id=1901844263]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.3
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_l47dl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2qd8x")
+text = "Atras"
+
+[node name="Espaciador" type="Control" parent="DivisorPrincipal/PanelCartas/VSplitContainer/Botones" unique_id=1980351238]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ListoButton2" type="Button" parent="DivisorPrincipal/PanelCartas/VSplitContainer/Botones" unique_id=1440310933]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+size_flags_stretch_ratio = 1.3
+theme_override_constants/h_separation = 4
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_l47dl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2qd8x")
+text = "Listo"
+
+[node name="Espaciador3" type="Control" parent="DivisorPrincipal/PanelCartas/VSplitContainer/Botones" unique_id=130027451]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormFuerza/FuerzaLabel" to="." method="_on_fuerza_label_pressed"]
+[connection signal="pressed" from="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormDestreza/DestrezaLabel" to="." method="_on_destreza_label_pressed"]
+[connection signal="pressed" from="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/FDC/FormConstitucion/ConstitucionLabel" to="." method="_on_constitucion_label_pressed"]
+[connection signal="pressed" from="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormSabiduria/SabiduriaLabel" to="." method="_on_sabiduria_label_pressed"]
+[connection signal="pressed" from="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormInteligencia/InteligenciaLabel" to="." method="_on_inteligencia_label_pressed"]
+[connection signal="pressed" from="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos/HSplitContainer/SIA/FormCarisma/CarismaLabel" to="." method="_on_carisma_label_pressed"]
+[connection signal="pressed" from="DivisorPrincipal/PanelInformacion/Subpaneles/Botones/BackButton1" to="." method="_on_back_button_1_pressed"]
+[connection signal="pressed" from="DivisorPrincipal/PanelInformacion/Subpaneles/Botones/ListoButton1" to="." method="_on_listo_button_1_pressed"]
+[connection signal="pressed" from="DivisorPrincipal/PanelCartas/VSplitContainer/HSplitContainer/VBoxContainer2/BotonComprar" to="." method="_on_boton_comprar_pressed"]
+[connection signal="pressed" from="DivisorPrincipal/PanelCartas/VSplitContainer/Botones/BackButton2" to="." method="_on_back_button_2_pressed"]
+[connection signal="pressed" from="DivisorPrincipal/PanelCartas/VSplitContainer/Botones/ListoButton2" to="." method="_on_listo_button_2_pressed"]
