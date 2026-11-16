@@ -222,8 +222,8 @@ size_flags_horizontal = 3
 [node name="Label" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/InformacionGeneral" unique_id=980294982]
 layout_mode = 2
 theme_override_font_sizes/font_size = 15
-text = "Los atributos que muestra cada raza son a los que se les deben distribuir 3 puntos.
-Ejemplo (Personaje Elfo): +2 Destreza y +1 Inteligencia"
+text = "Los atributos que muestra cada raza son los que pueden tener un valor máximo de 18.
+Los demás deben  tener un valor máximo de 15"
 horizontal_alignment = 1
 
 [node name="ColorRect" type="ColorRect" parent="DivisorPrincipal/PanelInformacion/Subpaneles/InformacionGeneral" unique_id=1697083928]
@@ -452,13 +452,12 @@ layout_mode = 2
 [node name="Label" type="Label" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos" unique_id=1837421087]
 layout_mode = 2
 theme_override_font_sizes/font_size = 15
-text = "Cada atributo debe quedar entre 7 y 15. En total se pueden asignar 65 puntos.
-Los puntos asignado que provienen de la raza se cuentan aparte.
+text = "Cada atributo debe quedar entre 7 y 15. Y los atributos de las razas pueden llegar a tener 18.
+En total se pueden asignar 68 puntos.
+
 Ejemplo (Personaje Elfo):
-Atributos Base:
-Fuerza: 10, Destreza: 15, Constitución: 8, Sabiduria: 10, Inteligencia: 12, Carisma: 10
-Sumando los puntos de raza en Destreza e Inteligencia:
-Fuerza: 10, Destreza: 17, Constitución: 8, Sabiduria: 10, Inteligencia: 13, Carisma: 10"
+
+Fuerza: 8, Destreza: 17, Constitución: 8, Sabiduria: 10, Inteligencia: 18, Carisma: 7"
 horizontal_alignment = 1
 
 [node name="ColorRect" type="ColorRect" parent="DivisorPrincipal/PanelInformacion/Subpaneles/Atributos" unique_id=376865373]
