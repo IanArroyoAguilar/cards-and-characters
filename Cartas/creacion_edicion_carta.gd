@@ -217,6 +217,7 @@ func _al_confirmar_listo():
 	
 	# Guardamos (sobrescribe si ya existía)
 	GestorCarta.guardar_carta(carta, carta_actual_id)
+	GestorCarta.guardar_carta_en_json(carta, carta_actual_id)
 	
 	# Volvemos al compendio
 	get_tree().change_scene_to_file("res://Cartas/compendio_visual.tscn")
