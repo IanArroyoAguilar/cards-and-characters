@@ -113,12 +113,12 @@ func _on_nivel_input_text_changed(new_text: String) -> void:
 	
 func actualizar_puntos_compra() -> void:
 	# Los puntos disponibles se basan en el modificador de cada atributo final
-	pd_fue.text = str((int(nivel_input.text)+1)*floori((int(fuerza_input.text) - 10) / 2.0))
-	pd_des.text = str((int(nivel_input.text)+1)*floori((int(destreza_input.text) - 10) / 2.0))
-	pd_con.text = str((int(nivel_input.text)+1)*floori((int(constitucion_input.text) - 10) / 2.0))
-	pd_sab.text = str((int(nivel_input.text)+1)*floori((int(sabiduria_input.text) - 10) / 2.0))
-	pd_int.text = str((int(nivel_input.text)+1)*floori((int(inteligencia_input.text) - 10) / 2.0))
-	pd_car.text = str((int(nivel_input.text)+1)*floori((int(carisma_input.text) - 10) / 2.0))
+	pd_fue.text = str(max(0,(int(nivel_input.text)+1)*floori((int(fuerza_input.text) - 10) / 2.0)))
+	pd_des.text = str(max(0,(int(nivel_input.text)+1)*floori((int(destreza_input.text) - 10) / 2.0)))
+	pd_con.text = str(max(0,(int(nivel_input.text)+1)*floori((int(constitucion_input.text) - 10) / 2.0)))
+	pd_sab.text = str(max(0,(int(nivel_input.text)+1)*floori((int(sabiduria_input.text) - 10) / 2.0)))
+	pd_int.text = str(max(0,(int(nivel_input.text)+1)*floori((int(inteligencia_input.text) - 10) / 2.0)))
+	pd_car.text = str(max(0,(int(nivel_input.text)+1)*floori((int(carisma_input.text) - 10) / 2.0)))
 	
 	# Asignamos el dinero inicial
 	dinero_label.text = "100" # O la regla que uses

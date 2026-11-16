@@ -111,12 +111,12 @@ func _on_back_button_1_pressed() -> void:
 
 func actualizar_puntos_compra() -> void:
 	# Los puntos disponibles se basan en el modificador de cada atributo final
-	pd_fue.text = str(floori((int(fuerza_input.text) - 10) / 2.0) + personaje.get("puntos_fuerza"))
-	pd_des.text = str(floori((int(destreza_input.text) - 10) / 2.0) + personaje.get("puntos_destreza"))
-	pd_con.text = str(floori((int(constitucion_input.text) - 10) / 2.0) + personaje.get("puntos_constitucion"))
-	pd_sab.text = str(floori((int(sabiduria_input.text) - 10) / 2.0) + personaje.get("puntos_sabiduria"))
-	pd_int.text = str(floori((int(inteligencia_input.text) - 10) / 2.0) + personaje.get("puntos_inteligencia"))
-	pd_car.text = str(floori((int(carisma_input.text) - 10) / 2.0) + personaje.get("puntos_carisma"))
+	pd_fue.text = str(max(0,floori((int(fuerza_input.text) - 10) / 2.0) + personaje.get("puntos_fuerza")))
+	pd_des.text = str(max(0,floori((int(destreza_input.text) - 10) / 2.0) + personaje.get("puntos_destreza")))
+	pd_con.text = str(max(0,floori((int(constitucion_input.text) - 10) / 2.0) + personaje.get("puntos_constitucion")))
+	pd_sab.text = str(max(0,floori((int(sabiduria_input.text) - 10) / 2.0) + personaje.get("puntos_sabiduria")))
+	pd_int.text = str(max(0,floori((int(inteligencia_input.text) - 10) / 2.0) + personaje.get("puntos_inteligencia")))
+	pd_car.text = str(max(0,floori((int(carisma_input.text) - 10) / 2.0) + personaje.get("puntos_carisma")))
 
 func _on_listo_button_1_pressed() -> void:
 	var atributos = {
