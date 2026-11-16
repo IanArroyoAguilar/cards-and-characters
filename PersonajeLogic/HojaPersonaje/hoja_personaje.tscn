@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://1rbo4xeq4yek" path="res://Assets/Icons/DS_fail.svg" id="8_11wpk"]
 [ext_resource type="Script" uid="uid://dp4ls2culn0qn" path="res://PersonajeLogic/HojaPersonaje/central.gd" id="14_mx7h7"]
 [ext_resource type="Script" uid="uid://dcovb82sm24mc" path="res://PersonajeLogic/HojaPersonaje/cartas_equipadas.gd" id="15_yws1t"]
+[ext_resource type="AudioStream" uid="uid://cjgq4nqtnml0a" path="res://Assets/sfxmint-impact-dice-roll-11.wav" id="17_x4e2q"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c1ncr"]
 content_margin_left = 4.0
@@ -1350,6 +1351,9 @@ theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxFlat_vg8ba")
 theme_override_styles/hover = SubResource("StyleBoxFlat_uklbw")
 text = "Añadir"
+
+[node name="SonidoDado" type="AudioStreamPlayer" parent="." unique_id=1777891182]
+stream = ExtResource("17_x4e2q")
 
 [connection signal="focus_entered" from="PanelContainer/HBoxContainer/PanelHistorialNotas/VBoxContainer/PanelStats/Stats/Vida/Control/LineEdit" to="PanelContainer/HBoxContainer/PanelHistorialNotas/VBoxContainer/PanelStats/Stats/Vida/Control/LineEdit" method="_on_focus_entered"]
 [connection signal="text_changed" from="PanelContainer/HBoxContainer/PanelHistorialNotas/VBoxContainer/PanelStats/Stats/Vida/Control/LineEdit" to="PanelContainer/HBoxContainer/PanelHistorialNotas/VBoxContainer/PanelStats/Stats/Vida/Control/LineEdit" method="_on_text_changed"]

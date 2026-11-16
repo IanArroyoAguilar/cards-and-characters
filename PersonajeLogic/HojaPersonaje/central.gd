@@ -1,4 +1,6 @@
 extends VBoxContainer
+
+@onready var sonido_dado: AudioStreamPlayer = $"../../../SonidoDado"
 @onready var hoja_personaje: Control = $"../../.."
 var personaje
 
@@ -173,6 +175,7 @@ func _on_ventaja_checkbox_toggled(toggled_on: bool) -> void:
 	roll_button.disabled = (what_roll_label.text == "" or what_roll_label.text == " V")
 	
 func _on_roll_button_pressed() -> void:
+	sonido_dado.play()
 	var texto_roll = what_roll_label.text.strip_edges()
 	if texto_roll == "" or texto_roll == " V":
 		return
